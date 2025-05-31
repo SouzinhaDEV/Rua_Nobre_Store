@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: "Rubik", serif;
+}
+
+/* Estilização da logo */
+.logo {
+  margin-left: 900px;
+  width: 6%;
+}
+
+/* Estilização do HEADER */
+header {
+  background-color: #000000;
+  height: 150px;
+  display: flex;
+  position: relative;
+}
+
+.icon {
+  width: 160px;
+  column-gap: 26px;
+}
+
+.divHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  top: 66px;
+  right: 0;
+  display: flex;
+}
+
+.texto_catalago {
+  text-align: center;
+  font-family: "Rubik", serif;
+  margin-top: 30px;
+}
+
+.produto-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 200px;
+  max-width: 1450px;
+  width: 100%;
+  padding: 65px;
+  margin-top: 75px;
+  margin-left: 235px;
+  font-family: "Rubik", serif;
+}
+
+.produto-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+}
+
+.produto-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.produto-info {
+  padding: 15px;
+}
+
+.produto-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.produto-info p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.produto-info span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Botão */
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .produto-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-left: auto;
+    padding: 40px;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 10%;
+  }
+
+  nav {
+    position: static;
+    justify-content: flex-end;
+  }
+
+  .divHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .produto-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-left: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .icon {
+    width: 100px;
+  }
+
+  .divHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .produto-card img {
+    height: 300px;
+  }
+}
