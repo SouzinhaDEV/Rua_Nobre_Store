@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/pop_produtos.css">
+    <title>Rua Nobre Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="logo">RUA <span>NOBRE STORE</span></div>
+        <h1 id="nome-produto">Titulo</h1>
+        <img id="imagem-produto" src="" alt="Imagem do produto">
+        <p id="descricao-produto">Descrição</p>
+        <button class="btn-close" onclick="window.close()">Fechar</button>
+
+        <script>
+            function getParametro(dado){
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(dado);
+            }
+            document.getElementById("nome-produto").textContent = getParametro("nome");
+            document.getElementById("imagem-produto").src = getParametro("imagem");
+            document.getElementById("descricao-produto").textContent = getParametro("descricao");
+        </script>
+    </main>
+</body>
+</html>

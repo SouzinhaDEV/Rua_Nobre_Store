@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+#imagem-produto {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+#imagem-produto:hover {
+  transform: scale(1.02);
+}
+
+#descricao-produto {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.btn-close {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn-close:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #000000;
+}
+
+@media (max-width: 640px) {
+  main {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
